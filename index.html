@@ -1,0 +1,53 @@
+<!--- Build standard calculator that takes 2 numbers as inputs, an operator and equal -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="viewport-fit=cover"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">  -->
+
+    <title>A standard calculator</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    
+</head>
+
+<body>
+   
+      <!-- <div class="box"> -->
+         <div class="display" input type="text" name="display" readonly id="result" disabled> </div>
+                    
+          <div class="keys">
+            <p><input type="button" class="button top3-gray" value="C" onclick='clearDisp()'>
+                <input type="button" class="button top3-gray" value="+/-" onclick='sendValues("%")'>
+                <input type="button" class="button top3-gray" value="%" onclick='sendValues("%")'>
+                <input type="button" class="button right5" value="&divide" onclick='sendValues("/")'>
+            </p>
+            <p><input type="button" class="button others" value="7" onclick="sendValues('7')">
+                <input type="button" class="button others" value="8" onclick="sendValues('8')">
+                <input type="button" class="button others" value="9" onclick='sendValues("9")'>
+                <input type="button" class="button right5" value="×" onclick='sendValues("*")'>
+            </p>
+            <p><input type="button" class="button others" value="4" onclick='sendValues("4")'>
+                <input type="button" class="button others" value="5" onclick='sendValues("5")'>
+                <input type="button" class="button others" value="6" onclick='sendValues("6")'>
+                <input type="button" class="button right5" value="-" onclick='sendValues("-")'>
+            </p>
+            <p><input type="button" class="button others" value="1" onclick='sendValues("1")'>
+                <input type="button" class="button others" value="2" onclick='sendValues("2")'>
+                <input type="button" class="button others" value="3" onclick='sendValues("3")'>
+                <input type="button" class="button right5" value="+" onclick="sendValues('+')">
+            </p>
+            <p><input type="button" class="button zero" value="0" onclick='sendValues("0")'>
+                <!-- <input type="button" class="button dot" value="." onclick='sendValues(".")'> -->
+                <input type="button" class="button others" value="." onclick='sendValues(".")'>
+                <input type="button" class="button right5" value="=" onclick="equalTo()">
+            </p>
+        </div>
+     <!-- </div>  -->
+
+    <script src="./styles/js/script.js"></script>
+</body>
+
+</html>
